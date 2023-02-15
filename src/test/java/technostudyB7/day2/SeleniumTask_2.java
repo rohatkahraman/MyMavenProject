@@ -13,20 +13,20 @@ public class SeleniumTask_2 {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         int num1 = 1;
-        String numToString1 = Integer.toString(num1);
+        String num1ToString = Integer.toString(num1);
         int num2 = 2;
-        String numToString2 = Integer.toString(num2);
+        String num2ToString = Integer.toString(num2);
 
 
         driver.get("https://demo.seleniumeasy.com/basic-first-form-demo.html");
         //<input type="text" class="form-control"
         // placeholder="Enter value" id="sum1">
         WebElement a = driver.findElement(By.id("sum1"));
-        a.sendKeys(numToString1);
+        a.sendKeys(num1ToString);
         //<input type="text" class="form-control"
         // placeholder="Enter value" id="sum2">
         WebElement b = driver.findElement(By.id("sum2"));
-        b.sendKeys(numToString2);
+        b.sendKeys(num2ToString);
 
         //<button type="button" onclick="return total()"
         // class="btn btn-default">Get Total</button>
