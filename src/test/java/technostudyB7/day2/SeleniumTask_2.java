@@ -44,6 +44,8 @@ public class SeleniumTask_2 {
         } else {
             System.out.println("Verification FAILED");
             System.out.println("Actual result is: " + actualResult);
+
+
         }
     }
 }
